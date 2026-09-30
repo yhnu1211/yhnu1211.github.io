@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신희건의 music is my life, book is my love</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Gowun Batang for Korean emotional typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        warmbeige: '#F4ECD8',
+                        softbrown: '#D5C3A5',
+                        deepbrown: '#5C4033',
+                        darktext: '#3D2817',
+                    },
+                    fontFamily: {
+                        batang: ['"Gowun Batang"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #3D2817;
+            font-family: 'Inter', 'Gowun Batang', sans-serif;
+        }
+        .font-batang {
+            font-family: 'Gowun Batang', serif;
+        }
+    </style>
+</head>
+<body class="bg-cream text-darktext min-h-screen flex flex-col justify-between selection:bg-softbrown selection:text-darktext">
+
+    <!-- Header -->
+    <header class="w-full py-6 px-8 bg-warmbeige/80 backdrop-blur-md sticky top-0 z-50 border-b border-softbrown/30 shadow-sm">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <h1 class="text-base sm:text-lg md:text-xl font-batang font-bold tracking-wide flex items-center gap-2 text-deepbrown text-center sm:text-left">
+                <i class="fa-solid fa-book-open"></i> 신희건의 music is my life, book is my love
+            </h1>
+            <nav class="flex gap-6 text-sm font-medium">
+                <a href="#about" class="hover:text-deepbrown transition-colors">소개</a>
+                <a href="#reading" class="hover:text-deepbrown transition-colors">독서</a>
+                <a href="#music" class="hover:text-deepbrown transition-colors">음악</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-12 w-full space-y-16">
+
+        <!-- About Section -->
+        <section id="about" class="text-center space-y-6 py-10 bg-warmbeige/40 rounded-3xl p-8 border border-softbrown/40 shadow-sm transition-transform duration-500 hover:shadow-md">
+            <div class="w-28 h-28 mx-auto rounded-full bg-softbrown/40 flex items-center justify-center text-deepbrown text-4xl shadow-inner">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="space-y-3">
+                <h2 class="text-3xl font-batang font-bold text-darktext">독서와 음악을 사랑하는 신희건의 공간입니다.</h2>
+                <p class="text-darktext/85 max-w-lg mx-auto leading-relaxed font-batang text-base">
+                    책 속에서 깊은 사유와 따스한 위로를 만나고, 클래지콰이의 멜로디처럼 산뜻한 음악으로 일상의 여유를 채우는 기록의 공간입니다.
+                </p>
+            </div>
+            <div class="flex justify-center gap-3 pt-2">
+                <span class="px-4 py-1.5 bg-softbrown/30 text-xs rounded-full font-medium text-deepbrown"><i class="fa-solid fa-book mr-1.5"></i> 독서</span>
+                <span class="px-4 py-1.5 bg-softbrown/30 text-xs rounded-full font-medium text-deepbrown"><i class="fa-solid fa-headphones mr-1.5"></i> 음악</span>
+                <span class="px-4 py-1.5 bg-softbrown/30 text-xs rounded-full font-medium text-deepbrown"><i class="fa-solid fa-leaf mr-1.5"></i> 휴식</span>
+            </div>
+        </section>
+
+        <!-- Reading Section -->
+        <section id="reading" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-softbrown/50 pb-3">
+                <i class="fa-solid fa-book-bookmark text-deepbrown text-xl"></i>
+                <h3 class="text-2xl font-batang font-bold">독서 칸 (이달의 책)</h3>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-softbrown/40 shadow-sm flex flex-col md:flex-row gap-8 items-center transition-all hover:shadow-md">
+                <div class="w-full md:w-1/3 bg-warmbeige rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-softbrown/30 aspect-[3/4] shadow-inner">
+                    <i class="fa-solid fa-feather-pointed text-4xl text-deepbrown mb-4"></i>
+                    <h4 class="font-batang font-bold text-lg text-darktext mb-1">감사하면 달라지는 것들</h4>
+                    <p class="text-xs text-darktext/70">제니스 캐플런 저</p>
+                </div>
+                <div class="w-full md:w-2/3 space-y-4">
+                    <div>
+                        <span class="text-xs tracking-wider uppercase font-semibold text-deepbrown bg-warmbeige px-3 py-1 rounded-md">추천 도서</span>
+                        <h4 class="text-2xl font-batang font-bold mt-2 text-darktext">감사하면 달라지는 것들</h4>
+                        <p class="text-sm text-darktext/75 mt-1">저자: 제니스 캐플런 | 출판사: 위너스북</p>
+                    </div>
+                    <div class="bg-warmbeige/50 p-5 rounded-2xl border border-softbrown/30 space-y-3 text-sm font-batang leading-relaxed text-darktext/90">
+                        <p>1. 감사의 작은 실천이 우리의 뇌와 일상을 어떻게 긍정적으로 변화시키는지 과학적, 심리학적으로 조명합니다.</p>
+                        <p>2. 일상 속에서 당연하게 여기던 것들에 감사함을 느낌으로써 삶을 대하는 태도와 행복의 크기를 바꿀 수 있습니다.</p>
+                        <p>3. 감사를 습관화할 때 찾아오는 내면의 치유와 인간관계의 회복, 그리고 진정한 삶의 풍요로움을 선물합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-softbrown/50 pb-3">
+                <i class="fa-solid fa-music text-deepbrown text-xl"></i>
+                <h3 class="text-2xl font-batang font-bold">좋아하는 음악</h3>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-softbrown/40 shadow-sm space-y-6">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <!-- Album Cover Square Box (Instant Pig) -->
+                    <div class="w-48 h-48 rounded-2xl bg-gradient-to-br from-deepbrown to-darktext flex flex-col items-center justify-center p-6 text-cream shadow-lg shrink-0 border-2 border-softbrown/50 text-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-[radial-gradient(#8d7b68_1px,transparent_1px)] [background-size:12px_12px] opacity-20"></div>
+                        <i class="fa-solid fa-piggy-bank text-3xl mb-2 text-warmbeige"></i>
+                        <span class="font-batang font-bold text-sm tracking-widest text-warmbeige">INSTANT PIG</span>
+                        <span class="text-[10px] text-cream/70 mt-0.5">Clazziquai Project 1st</span>
+                        <div class="mt-2 px-2.5 py-0.5 bg-warmbeige/20 rounded text-[11px] font-semibold text-warmbeige">
+                            Sweety
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-center md:text-left flex-grow">
+                        <span class="text-xs tracking-wider uppercase font-semibold text-deepbrown bg-warmbeige px-3 py-1 rounded-md">My Favorite Track</span>
+                        <h4 class="text-2xl font-batang font-bold text-darktext mt-1">Sweety</h4>
+                        <p class="text-sm font-medium text-darktext/75">클래지콰이 프로젝트 (Clazziquai Project)</p>
+                        <p class="text-sm font-batang text-darktext/85 leading-relaxed pt-1">
+                            클래지콰이 프로젝트 1집 《Instant Pig》의 대표 수록곡으로, 알렉스와 호란의 감미롭고 세련된 보컬과 톡톡 튀는 라운지 하우스 비트가 어우러져 듣는 이의 마음을 산뜻하고 포근하게 채워주는 명곡입니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interactive Player Simulation & YouTube link -->
+                <div class="bg-warmbeige/60 p-6 rounded-2xl border border-softbrown/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 w-full sm:w-auto">
+                        <button id="playBtn" onclick="togglePlay()" class="w-12 h-12 rounded-full bg-deepbrown text-cream flex items-center justify-center hover:bg-darktext transition-colors shadow-sm focus:outline-none shrink-0">
+                            <i id="playIcon" class="fa-solid fa-play"></i>
+                        </button>
+                        <div>
+                            <p class="font-bold text-sm text-darktext">Sweety - Clazziquai Project</p>
+                            <p id="playerStatus" class="text-xs text-darktext/70">재생 버튼을 눌러 산뜻한 멜로디를 감상해보세요</p>
+                        </div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Clazziquai+Sweety" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-white text-darktext border border-softbrown rounded-xl text-xs font-semibold hover:bg-softbrown/20 transition-all flex items-center gap-2 shadow-sm w-full sm:w-auto justify-center">
+                        <i class="fa-brands fa-youtube text-red-500"></i> 유튜브에서 검색하기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 text-center text-xs text-darktext/70 border-t border-softbrown/30 mt-12 bg-warmbeige/30">
+        <p class="font-batang">© 2026 신희건의 music is my life, book is my love. All rights reserved.</p>
+    </footer>
+
+    <!-- Interactive script -->
+    <script>
+        let isPlaying = false;
+        function togglePlay() {
+            isPlaying = !isPlaying;
+            const playIcon = document.getElementById('playIcon');
+            const playerStatus = document.getElementById('playerStatus');
+            
+            if (isPlaying) {
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-pause');
+                playerStatus.textContent = '♪ 클래지콰이의 Sweety 감성 멜로디가 재생 중입니다...';
+            } else {
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+                playerStatus.textContent = '음악 재생이 일시중지되었습니다.';
+            }
+        }
+    </script>
+</body>
+</html>
