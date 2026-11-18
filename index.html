@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -59,6 +59,12 @@
     .suno-card:hover, .game-card:hover { border-color: var(--tan); transform: translateY(-2px); }
     .suno-card p, .game-card p { color: var(--muted); font-size: .93rem; flex: 1; }
     .suno-card .btn { align-self: flex-start; }
+    .video-card { display: grid; grid-template-columns: minmax(220px, 340px) 1fr; align-items: center; gap: 28px; }
+    .shorts-frame { width: 100%; max-width: 340px; aspect-ratio: 9 / 16; margin: 0 auto; overflow: hidden; border-radius: 16px; background: #1b2033; box-shadow: 0 8px 24px rgba(61,48,37,.18); }
+    .shorts-frame iframe { width: 100%; height: 100%; display: block; border: 0; }
+    .video-copy h4 { font-size: 1.35rem; margin-bottom: 8px; }
+    .video-copy p { color: var(--muted); }
+    @media (max-width: 560px) { .video-card { grid-template-columns: 1fr; } .shorts-frame { max-width: 300px; } .video-copy { text-align: center; } .video-copy .btn { align-self: center; } }
     .game-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; text-decoration: none; transition: border-color .2s,transform .2s; }
     .game-card .btn { margin-top: 0; }
     footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 32px 6vw 40px; border-top: 1px solid var(--line); margin-top: 16px; background: var(--cream); }
@@ -80,7 +86,7 @@
   <header>
     <h1>신희건 | Portfolio</h1>
     <nav aria-label="주요 메뉴">
-      <a href="#about">소개</a><a href="#reading">독서</a><a href="#music">음악</a><a href="#suno">내 노래</a><a href="#game">게임</a>
+      <a href="#about">소개</a><a href="#reading">독서</a><a href="#music">음악</a><a href="#suno">내 노래</a><a href="#video">영상</a><a href="#game">게임</a>
     </nav>
   </header>
   <main>
@@ -119,6 +125,20 @@
         <article class="card suno-card"><h4>밑에서 시작해</h4><iframe class="suno-player" src="https://suno.com/embed/d70ace33-0649-443d-82ff-54364c8d5a64" title="Suno 플레이어: 밑에서 시작해" loading="lazy" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe></article>
       </div>
       <p class="suno-player-note">각 플레이어의 재생 버튼을 누르면 홈페이지에서 바로 재생됩니다.</p>
+    </section>
+    <section class="block" id="video">
+      <h3>🎬 배달톡 쇼츠</h3>
+      <div class="card video-card">
+        <div class="shorts-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/GjjsgEtreWI" title="배달톡 — 2030과 함께하는 한 끼 | YouTube 쇼츠" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-copy">
+          <span class="badge">KOSAC 영콘챌</span>
+          <h4>배달톡, 2030과 함께</h4>
+          <p>2030의 일상에 함께하는 배달톡 이야기를 영상으로 만나보세요.</p>
+          <a class="btn" href="https://youtube.com/shorts/GjjsgEtreWI" target="_blank" rel="noopener">▶️ 유튜브에서 보기</a>
+        </div>
+      </div>
     </section>
     <section class="block" id="game">
       <h3>🎮 게임</h3><a class="card game-card" href="https://yhnu1211.github.io/game/"><div><h4>🕹️ 게임 하러 가기</h4><p>잠깐 쉬어가는 게임 공간입니다.</p></div><span class="btn">게임 열기 🎮</span></a>
